@@ -6,9 +6,9 @@ const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Technology", href: "#technology" },
-  { label: "Facility", href: "#facility" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Technology", href: "/technology" },
+  { label: "Facility", href: "/facility" },
 ];
 
 export default function Navbar({
@@ -65,7 +65,7 @@ export default function Navbar({
 
         {/* desktop contact */}
         <a
-          href="#contact"
+          href="/contact"
           className="hidden shrink-0 rounded-full border border-white-off px-[30px] py-[15px] text-[18px] leading-none [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] transition-colors hover:bg-white-off hover:text-navy lg:inline-flex"
         >
           Contact
@@ -108,7 +108,7 @@ export default function Navbar({
             ))}
           </ul>
           <a
-            href="#contact"
+            href="/contact"
             onClick={() => setOpen(false)}
             className="mt-3 inline-flex rounded-full border border-white-off px-[30px] py-[15px] text-[18px] leading-none [text-box-edge:cap_alphabetic] [text-box-trim:trim-both]"
           >
