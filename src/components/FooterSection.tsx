@@ -1,22 +1,24 @@
 function Logo() {
   return (
-    <div className="relative h-[23px] w-[217px]">
-      <img
-        src="/images/logo-icon.svg"
-        alt=""
-        className="absolute left-0 top-0 h-[22.937px] w-[25.529px]"
-      />
-      <img
-        src="/images/logo-wordmark.svg"
-        alt="Prospera"
-        className="absolute left-[30.93px] top-[0.05px] h-[22.915px] w-[162.554px]"
-      />
-      <img
-        src="/images/logo-3pl.svg"
-        alt="3PL"
-        className="absolute left-[198.86px] top-[8.12px] h-[6.701px] w-[18.174px]"
-      />
-    </div>
+    <a href="/" aria-label="Prospera 3PL home" className="block">
+      <div className="relative h-[23px] w-[217px]">
+        <img
+          src="/images/logo-icon.svg"
+          alt=""
+          className="absolute left-0 top-0 h-[22.937px] w-[25.529px]"
+        />
+        <img
+          src="/images/logo-wordmark.svg"
+          alt="Prospera"
+          className="absolute left-[30.93px] top-[0.05px] h-[22.915px] w-[162.554px]"
+        />
+        <img
+          src="/images/logo-3pl.svg"
+          alt="3PL"
+          className="absolute left-[198.86px] top-[8.12px] h-[6.701px] w-[18.174px]"
+        />
+      </div>
+    </a>
   );
 }
 

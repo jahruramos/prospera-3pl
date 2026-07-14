@@ -52,7 +52,7 @@ export default function OurPurposeSection() {
             <Badge
               icon="/images/icon-support.svg"
               label="Dedicated Support"
-              className="left-4 top-4 lg:left-[-140px] lg:top-[101px]"
+              className="left-4 top-4 lg:left-[-20px] lg:top-[101px]"
             />
             <Badge
               icon="/images/icon-scalable.svg"

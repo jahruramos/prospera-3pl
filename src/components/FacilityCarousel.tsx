@@ -16,7 +16,16 @@ export default function FacilityCarousel({
 
   return (
     <div className="group relative h-full w-full overflow-hidden rounded-[30px] bg-[#c6c6c6]">
-      <img src={images[index]} alt={alt} className="h-full w-full object-cover" />
+      {images.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt={alt}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ease-in-out ${
+            i === index ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
       <button
         type="button"
         onClick={prev}

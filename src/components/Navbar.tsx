@@ -52,7 +52,7 @@ export default function Navbar({
       <div className="mx-auto flex max-w-[1256px] items-center justify-between px-5 py-6 sm:px-8 lg:py-[35px]">
         {/* logo */}
         <a
-          href="#"
+          href="/"
           aria-label="Prospera 3PL home"
           className="relative block h-[23px] w-[217px] shrink-0"
         >

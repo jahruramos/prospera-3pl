@@ -26,7 +26,7 @@ export default function Hero() {
           logistics solutions that help brands grow with confidence.
         </p>
         <a
-          href="#learn-more"
+          href="/about"
           className="mt-7 w-fit rounded-full border border-white-off px-[30px] py-[15px] text-[18px] leading-none [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] transition-colors hover:bg-white-off hover:text-navy lg:mt-[46px]"
         >
           Learn more

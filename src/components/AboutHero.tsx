@@ -1,6 +1,6 @@
 export default function AboutHero() {
   return (
-    <section className="w-full bg-white pt-20 text-navy lg:pt-[150px]">
+    <section className="w-full bg-white pb-20 pt-20 text-navy lg:pb-[120px] lg:pt-[150px]">
       <div className="mx-auto grid max-w-[1256px] grid-cols-1 items-start gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-x-[46px] lg:gap-y-[100px]">
         {/* row 1 — left: intro text */}
         <div>
@@ -34,7 +34,7 @@ export default function AboutHero() {
         />
 
         {/* row 2 — right: closing text */}
-        <div className="max-w-[621px] text-[16px] font-light leading-[28px] lg:text-[20px] lg:leading-[35px]">
+        <div className="max-w-[621px] text-[16px] font-light leading-[28px] lg:self-center lg:text-[20px] lg:leading-[35px]">
           <p>
             Our team combines operational excellence with a hands on approach,
             providing warehousing, fulfillment, distribution, and transportation

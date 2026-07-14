@@ -38,7 +38,7 @@ function FeatureCard({ title, body }: Feature) {
       <h2 className="text-[28px] font-semibold leading-[32px] tracking-[-0.5px] sm:text-[36px] sm:leading-[40px] lg:text-[44px] lg:leading-[48.4px] lg:tracking-[-0.88px]">
         {title}
       </h2>
-      <p className="text-[18px] font-light leading-[26px] sm:text-[22px] sm:leading-[31px] lg:text-[26px] lg:leading-[35px]">
+      <p className="text-[16px] font-light leading-[26px] sm:text-[20px] sm:leading-[31px] lg:text-[24px] lg:leading-[35px]">
         {body}
       </p>
     </div>
@@ -54,15 +54,13 @@ export default function FacilityFeatures() {
           return (
             <div
               key={feature.title}
-              className="grid grid-cols-1 gap-6 lg:grid-cols-[1.2fr_1fr] lg:gap-6"
+              className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:auto-rows-[512px] lg:gap-6"
             >
-              <div className={textLeft ? "lg:order-1" : "lg:order-2"}>
+              <div className={`h-full ${textLeft ? "lg:order-1" : "lg:order-2"}`}>
                 <FeatureCard title={feature.title} body={feature.body} />
               </div>
               <div
-                className={`aspect-[640/512] w-full lg:aspect-auto lg:h-[512px] ${
-                  textLeft ? "lg:order-2" : "lg:order-1"
-                }`}
+                className={`h-full w-full ${textLeft ? "lg:order-2" : "lg:order-1"}`}
               >
                 <FacilityCarousel
                   images={FACILITY_PHOTOS}
