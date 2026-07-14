@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
@@ -17,15 +17,38 @@ export default function Navbar({
   variant?: "solid" | "overlay";
 }) {
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastY, setLastY] = useState(0);
+
+  const onScroll = useCallback(() => {
+    const y = window.scrollY;
+    if (y < 10) {
+      setHidden(false);
+    } else if (y > lastY && y > 80) {
+      setHidden(true);
+    } else if (y < lastY) {
+      setHidden(false);
+    }
+    setLastY(y);
+  }, [lastY]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [onScroll]);
 
   const base = "w-full text-white-off";
   const chrome =
     variant === "overlay"
-      ? "absolute inset-x-0 top-0 z-20 bg-transparent"
-      : "relative z-20 bg-navy";
+      ? "fixed inset-x-0 top-0 z-20 bg-transparent"
+      : "fixed inset-x-0 top-0 z-20 bg-navy";
 
   return (
-    <header className={`${base} ${chrome}`}>
+    <header
+      className={`${base} ${chrome} transition-transform duration-300 ease-in-out ${
+        hidden ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <div className="mx-auto flex max-w-[1256px] items-center justify-between px-5 py-6 sm:px-8 lg:py-[35px]">
         {/* logo */}
         <a

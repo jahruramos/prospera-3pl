@@ -5,7 +5,7 @@ import FooterSection from "@/components/FooterSection";
 
 export default function ContactPage() {
   return (
-    <main>
+    <main className="pt-[71px] lg:pt-[93px]">
       <Navbar />
       <ContactHero />
       <ContactSection />

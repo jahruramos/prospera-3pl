@@ -1,6 +1,6 @@
 export default function AboutHero() {
   return (
-    <section className="w-full bg-white py-20 text-navy lg:py-[120px]">
+    <section className="w-full bg-white pt-20 text-navy lg:pt-[150px]">
       <div className="mx-auto grid max-w-[1256px] grid-cols-1 items-start gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-x-[46px] lg:gap-y-[100px]">
         {/* row 1 — left: intro text */}
         <div>

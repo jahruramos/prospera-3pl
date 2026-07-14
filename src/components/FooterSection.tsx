@@ -47,10 +47,10 @@ export default function FooterSection() {
             {/* company + contact */}
             <div className="flex flex-col">
               <nav className="flex flex-col gap-[15px]">
-                <a href="#" className="w-fit hover:opacity-70">Home</a>
-                <a href="#" className="w-fit hover:opacity-70">About</a>
-                <a href="#" className="w-fit hover:opacity-70">Technology</a>
-                <a href="#" className="w-fit hover:opacity-70">Facility</a>
+                <a href="/" className="w-fit hover:opacity-70">Home</a>
+                <a href="/about" className="w-fit hover:opacity-70">About</a>
+                <a href="/technology" className="w-fit hover:opacity-70">Technology</a>
+                <a href="/facility" className="w-fit hover:opacity-70">Facility</a>
               </nav>
               <div className="mt-12 lg:mt-auto">
                 <p>Contact</p>
@@ -68,10 +68,10 @@ export default function FooterSection() {
             <div className="flex flex-col">
               <p>Services</p>
               <nav className="mt-4 flex flex-col gap-[10px] font-thin">
-                <a href="#" className="w-fit hover:opacity-70">Warehousing</a>
-                <a href="#" className="w-fit hover:opacity-70">Fulfillment</a>
-                <a href="#" className="w-fit hover:opacity-70">B2B Distribution</a>
-                <a href="#" className="w-fit hover:opacity-70">Added Services</a>
+                <a href="/services" className="w-fit hover:opacity-70">Warehousing</a>
+                <a href="/services" className="w-fit hover:opacity-70">Fulfillment</a>
+                <a href="/services" className="w-fit hover:opacity-70">B2B Distribution</a>
+                <a href="/services" className="w-fit hover:opacity-70">Added Services</a>
               </nav>
             </div>
 

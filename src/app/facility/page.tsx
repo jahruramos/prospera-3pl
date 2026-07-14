@@ -6,7 +6,7 @@ import FooterSection from "@/components/FooterSection";
 
 export default function FacilityPage() {
   return (
-    <main>
+    <main className="pt-[71px] lg:pt-[93px]">
       <Navbar />
       <FacilityHero />
       <FacilityFeatures />
