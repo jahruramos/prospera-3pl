@@ -71,8 +71,8 @@ function ServiceCard({ title, body }: Pick<Service, "title" | "body">) {
 
 export default function ServicesList() {
   return (
-    <section className="w-full bg-white py-20 text-navy lg:py-[150px]">
-      <div className="mx-auto flex max-w-[1256px] flex-col gap-8 px-5 sm:px-8 lg:gap-10">
+    <section className="w-full bg-white py-20 text-navy lg:py-[90px]">
+      <div className="mx-auto flex max-w-[1256px] flex-col gap-8 px-5 sm:px-8 lg:gap-[90px]">
         {SERVICES.map((service, i) => {
           const imageLeft = i % 2 === 0;
           return (
